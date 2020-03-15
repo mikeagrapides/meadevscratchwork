@@ -5,7 +5,8 @@
         <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
       </div>
     </lightning-card>
-    <lightning-card title="Call Apex Example" icon-name="custom:custom63">
+    
+    <lightning-card title="Call Apex Example - List out 10 Account" icon-name="custom:custom63">
         <div class="slds-m-around_medium">
             <template if:true={accounts.data}>
                 <template for:each={accounts.data} for:item="account">
@@ -13,7 +14,7 @@
                 </template>
             </template>
             <template if:true={accounts.error}>
-                <c-error-panel errors={accounts.error}></c-error-panel>
+                <h1>There is an error.</h1>
             </template>
         </div>
     </lightning-card>
