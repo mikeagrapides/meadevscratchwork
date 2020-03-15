@@ -4,5 +4,10 @@
         <members>MEA_SCRATCH_WORK</members>
         <name>CustomApplication</name>
     </types>
+    <types>
+        <members>MEA_SCRATCH_WORK</members>
+        <members>MEA_SCRATCH_WORK_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
     <version>48.0</version>
 </Package>
