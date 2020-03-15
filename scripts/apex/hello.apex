@@ -5,6 +5,15 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+List<Account> accountList = new List<Account>();
+List<Contact> contactList = new List<Contact>();
+
+for (Integer i = 0; i < 10; i++) {
+    Account acct = new Account(Name='Test Account ' + i,
+                               ShippingLatitude = i + 0.555,
+                               ShippingLongitude = i + 0.999);
+    accountList.add(acct);
+    System.debug(i+1);
+}
+
+insert accountList;
