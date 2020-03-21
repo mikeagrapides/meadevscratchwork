@@ -2,10 +2,12 @@
     <lightning-card title="HelloWorld" icon-name="custom:custom14">
       <div class="slds-m-around_medium">
         <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        <lightning-input label="Name" value={greeting} onchange={handleKeyChange}></lightning-input>
       </div>
     </lightning-card>
-    
+
+    <br />
+
     <lightning-card title="Call Apex Example - List out 10 Account" icon-name="custom:custom63">
         <div class="slds-m-around_medium">
             <template if:true={accounts.data}>
@@ -18,5 +20,19 @@
             </template>
         </div>
     </lightning-card>
+
+    <br />
+
+    <lightning-card title="Lightning Record Form Example" icon-name="custom:custom63">
+        <lightning-record-form
+            record-id={recordId}
+            object-api-name="Account"
+            layout-type="Compact"
+            columns="2"
+            mode="view">
+        </lightning-record-form>
+    </lightning-card>
+
+
 </template>
       
