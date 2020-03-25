@@ -4,6 +4,9 @@
         <componentInstances>
             <componentName>helloWorld</componentName>
         </componentInstances>
+        <componentInstances>
+            <componentName>datatableTest</componentName>
+        </componentInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>

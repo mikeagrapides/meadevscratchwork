@@ -27,4 +27,3 @@ export default class HelloWorld extends LightningElement {
   }
   
 }
-    
