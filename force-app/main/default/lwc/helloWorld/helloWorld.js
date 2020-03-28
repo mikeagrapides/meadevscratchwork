@@ -6,5 +6,6 @@ export default class HelloWorld extends LightningElement {
     nextHandler() {
         this.dispatchEvent(new CustomEvent('next'));
     }
+    //
 }
 
