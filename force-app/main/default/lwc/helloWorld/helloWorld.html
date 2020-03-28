@@ -1,37 +1,10 @@
 <template>
-    <lightning-card title="HelloWorld" icon-name="custom:custom14">
-      <div class="slds-m-around_medium">
-        <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={handleKeyChange}></lightning-input>
-      </div>
-    </lightning-card>
-
-    <br />
-
-    <lightning-card title="Call Apex Example - List out 10 Account" icon-name="custom:custom63">
-        <div class="slds-m-around_medium">
-            <template if:true={accounts.data}>
-                <template for:each={accounts.data} for:item="account">
-                    <p key={account.Id}>{account.Name}</p>
-                </template>
-            </template>
-            <template if:true={accounts.error}>
-                <h1>There is an error.</h1>
-            </template>
-        </div>
-    </lightning-card>
-
-    <br />
-
-    <lightning-card title="Lightning Record Form Example" icon-name="custom:custom63">
-        <lightning-record-form
-            record-id={recordId}
-            object-api-name="Account"
-            layout-type="Compact"
-            columns="2"
-            mode="view">
-        </lightning-record-form>
-    </lightning-card>
-
-
+  <lightning-card title='helloWorld'>
+    {greeting}
+    <lightning-layout>
+      <lightning-layout-item>
+          <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={nextHandler}></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
 </template>
